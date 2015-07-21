@@ -28,6 +28,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "LCDConf.h"
 #include "GUI_Private.h"
+#include <stdlib.h>
 
 /** @addtogroup STEMWIN_LIBRARY
 * @{
@@ -65,13 +66,13 @@
 #undef  GUI_NUM_LAYERS
 #define GUI_NUM_LAYERS 1
 
-#define COLOR_CONVERSION_0 GUICC_M8888I
-#define DISPLAY_DRIVER_0   GUIDRV_LIN_32
+#define COLOR_CONVERSION_0 GUICC_M565//GUICC_M8888I
+#define DISPLAY_DRIVER_0   GUIDRV_LIN_16//GUIDRV_LIN_32
 
 
 #if (GUI_NUM_LAYERS > 1)
-  #define COLOR_CONVERSION_1 GUICC_M8888I
-  #define DISPLAY_DRIVER_1   GUIDRV_LIN_32
+  #define COLOR_CONVERSION_1 GUICC_565//GUICC_M8888I
+  #define DISPLAY_DRIVER_1   GUIDRV_LIN_16//GUIDRV_LIN_32
 #endif
 
 #ifndef   XSIZE_PHYS
@@ -91,9 +92,8 @@
   #error Virtual screens and multiple buffers are not allowed!
 #endif
 
-#define LCD_LAYER0_FRAME_BUFFER  ((uint32_t)0xD0200000)
+#define LCD_LAYER0_FRAME_BUFFER  ((uint32_t)0xD0000000) 
 #define LCD_LAYER1_FRAME_BUFFER  ((uint32_t)0xD0400000)
-
 /**
 * @}
 */ 
@@ -400,6 +400,7 @@ void LCD_X_Config(void)
 #endif
   
   /*Initialize GUI Layer structure */
+		
   layer_prop[0].address = LCD_LAYER0_FRAME_BUFFER;
 #if (GUI_NUM_LAYERS > 1)
   layer_prop[1].address = LCD_LAYER1_FRAME_BUFFER;     
