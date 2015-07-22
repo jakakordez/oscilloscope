@@ -9,10 +9,13 @@
 #include "WM.h"
 
 #define OUI_GRAPH_BACKGROUND	0x00994539
+#define OUI_GRAPH_LINES				0x00DEACA5
 #define OUI_BAR_BACKGROUND		0x006C2B40
 
+#define OUI_BUT_Settings			0x0001
+
 typedef struct {
-	uint8_t Buttons;
+	uint16_t Buttons;
 	int8_t Encoder1;
 	int8_t Encoder2;
 }UserInput;
@@ -41,8 +44,10 @@ typedef struct Component{
 
 void OUI_Initialize(void);
 void OUI_Draw(void);
+void OUI_DrawGrid(void);
 
 void OUI_DrawLabel(struct Component * component, uint16_t x, uint16_t y);
 void OUI_DrawElementData(struct Element * element, uint16_t x, uint16_t y);
+void OUI_DrawData(struct Component * component, uint8_t count);
 
 #endif

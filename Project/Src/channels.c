@@ -10,7 +10,7 @@ void Channel_HandleUserInput(struct Component * component, UserInput input);
 // --------------------------------------------------------------------		Channel 1 structure 
 
 Element Channel1_Offset = {"Offset", 0, 0, 1, OUI_DrawElementData};
-Element Channel1_Scale = {"Scale", 0, 0, 1, OUI_DrawElementData};
+Element Channel1_Scale = {"Scale", 1, 0, 1, OUI_DrawElementData};
 Element *Channel1_Elements[2] = {
 	&Channel1_Offset,
 	&Channel1_Scale
@@ -30,7 +30,7 @@ Component Channel1 = {
 
 // --------------------------------------------------------------------		Channel 2 structure 
 Element Channel2_Offset = {"Offset", 0, 0, 1, OUI_DrawElementData};
-Element Channel2_Scale = {"Scale", 0, 0, 1, OUI_DrawElementData};
+Element Channel2_Scale = {"Scale", 1, 0, 1, OUI_DrawElementData};
 Element *Channel2_Elements[2] = {
 	&Channel2_Offset,
 	&Channel2_Scale

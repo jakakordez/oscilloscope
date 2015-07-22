@@ -427,6 +427,21 @@
               <FileType>1</FileType>
               <FilePath>..\Src\channels.c</FilePath>
             </File>
+            <File>
+              <FileName>time.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\time.c</FilePath>
+            </File>
+            <File>
+              <FileName>trigger.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\trigger.c</FilePath>
+            </File>
+            <File>
+              <FileName>markers.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\markers.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
