@@ -420,6 +420,16 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Application/Components</GroupName>
+          <Files>
+            <File>
+              <FileName>channels.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\channels.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>Application/User</GroupName>
           <Files>
             <File>
@@ -431,6 +441,16 @@
               <FileName>stm32f4xx_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\stm32f4xx_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>oui.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\oui.c</FilePath>
+            </File>
+            <File>
+              <FileName>oscilloscope.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\oscilloscope.c</FilePath>
             </File>
           </Files>
         </Group>

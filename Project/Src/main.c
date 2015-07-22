@@ -28,6 +28,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "WM.h"
+#include "oui.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -111,16 +112,12 @@ int main(void)
   /* Activate the use of memory device feature */
   WM_SetCreateFlags(WM_CF_MEMDEV);
   
-	GUI_Clear();
-  GUI_SetFont(&GUI_Font20_1);
-	GUI_SetBkColor(GUI_BLUE);
-	GUI_SetColor(GUI_YELLOW);
-	GUI_DrawPixel(200, 100);
-	GUI_DrawLine(5, 5, 100, 100);
-  GUI_DispStringAt("Hello world!", (LCD_GetXSize()-100)/2, (LCD_GetYSize()-20)/2);
+	
+	OUI_Initialize();
   /* Infinite loop */  
   while (1) 
   {
+		OUI_Draw();
   }
 }
 
