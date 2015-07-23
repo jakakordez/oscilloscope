@@ -903,20 +903,18 @@ ARM Macro Assembler    Page 14
   463 0000001C                 END
               00000000 
               00000000 
-Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
-erwork --depend=stm32f429i_disco_mb1075\startup_stm32f429xx.d -ostm32f429i_disc
-o_mb1075\startup_stm32f429xx.o -I..\Inc -IC:\Users\Jaka\Desktop\oscilloscope\Pr
-oject\MDK-ARM\RTE -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include -IC:\Keil
-_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+Command Line: --debug --xref --cpu=Cortex-M4.fp --apcs=interwork --depend=stm32
+f429i_disco_mb1075\startup_stm32f429xx.d -ostm32f429i_disco_mb1075\startup_stm3
+2f429xx.o -I..\Inc -IC:\Users\Jaka\Desktop\oscilloscope\Project\MDK-ARM\RTE -IC
+:\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include -IC:\Keil\ARM\PACK\Keil\STM32F4xx
+_DFP\1.0.8\Device\Include --predefine="__MICROLIB SETA 1" --list=startup_stm32f
 
 
 
 ARM Macro Assembler    Page 15 
 
 
- --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 515" --pre
-define="_RTE_ SETA 1" --predefine="STM32F429xx SETA 1" --list=startup_stm32f429
-xx.lst startup_stm32f429xx.s
+429xx.lst startup_stm32f429xx.s
 
 
 
@@ -2088,4 +2086,4 @@ Symbol: __main
       At line 200 in file startup_stm32f429xx.s
 Comment: __main used once
 2 symbols
-454 symbols in table
+451 symbols in table

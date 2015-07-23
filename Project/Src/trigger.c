@@ -3,8 +3,8 @@
 
 #include "trigger.h"
 
-void Trigger_DrawData(struct Component * component);
-void Trigger_HandleUserInput(struct Component * component, UserInput input);
+void Trigger_DrawData(Component * This);
+void Trigger_HandleUserInput(Component * This, UserInput input);
 
 // --------------------------------------------------------------------		Time structure 
 
@@ -26,14 +26,14 @@ Component Trigger = {
 };
 
 
-void Trigger_DrawData(struct Component * component){
-	OUI_DrawData(component, 1);
+void Trigger_DrawData(Component * This){
+	OUI_DrawData(This, 1);
 }
 
-void Trigger_HandleUserInput(struct Component * component, UserInput input){
-	if(component->Elements[0]->Data > 0 || input.Encoder1 > 0){
-		component->Elements[0]->Data += input.Encoder1;
-		component->Elements[0]->Redraw = 1;
+void Trigger_HandleUserInput(Component * This, UserInput input){
+	if(This->Elements[0]->Data > 0 || input.Encoder1 > 0){
+		This->Elements[0]->Data += input.Encoder1;
+		This->Elements[0]->Redraw = 1;
 	}
 }
 

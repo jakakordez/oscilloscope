@@ -3,9 +3,9 @@
 
 #include "channels.h"
 
-void Channel_DrawGraph(struct Component * component, uint16_t x, uint16_t y);
-void Channel_DrawData(struct Component * component);
-void Channel_HandleUserInput(struct Component * component, UserInput input);
+void Channel_DrawGraph(Component * This, uint16_t x, uint16_t y);
+void Channel_DrawData(Component * This);
+void Channel_HandleUserInput(Component * This, UserInput input);
 
 // --------------------------------------------------------------------		Channel 1 structure 
 
@@ -48,24 +48,23 @@ Component Channel2 = {
 	Channel_HandleUserInput
 };
 
-void Channel_DrawGraph(struct Component * component, uint16_t x, uint16_t y){
-	
+void Channel_DrawGraph(Component * This, uint16_t x, uint16_t y){
 	
 }
 
-void Channel_DrawData(struct Component * component){
-	component->Elements[0]->DrawData(component->Elements[0], 0, 211);
-	component->Elements[1]->DrawData(component->Elements[1], 65, 211);
+void Channel_DrawData(Component * This){
+	This->Elements[0]->DrawData(This->Elements[0], 0, 211);
+	This->Elements[1]->DrawData(This->Elements[1], 65, 211);
 }
 
-void Channel_HandleUserInput(struct Component * component, UserInput input){
-	if(component->Elements[0]->Data > 0 || input.Encoder1 > 0){
-		component->Elements[0]->Data += input.Encoder1;
-		component->Elements[0]->Redraw = 1;
+void Channel_HandleUserInput(Component * This, UserInput input){
+	if(This->Elements[0]->Data > 0 || input.Encoder1 > 0){
+		This->Elements[0]->Data += input.Encoder1;
+		This->Elements[0]->Redraw = 1;
 	}
-	if(component->Elements[1]->Data > 0 || input.Encoder1 > 0){
-		component->Elements[1]->Data += input.Encoder2;
-		component->Elements[1]->Redraw = 1;
+	if(This->Elements[1]->Data > 0 || input.Encoder1 > 0){
+		This->Elements[1]->Data += input.Encoder2;
+		This->Elements[1]->Redraw = 1;
 	}
 }
 

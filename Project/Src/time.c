@@ -3,8 +3,8 @@
 
 #include "time.h"
 
-void Time_DrawData(struct Component * component);
-void Time_HandleUserInput(struct Component * component, UserInput input);
+void Time_DrawData(Component * This);
+void Time_HandleUserInput(Component * This, UserInput input);
 
 // --------------------------------------------------------------------		Time structure 
 
@@ -32,21 +32,21 @@ Component Time = {
 };
 
 
-void Time_DrawData(struct Component * component){
-	OUI_DrawData(component, 4);
+void Time_DrawData(Component * This){
+	OUI_DrawData(This, 4);
 }
 
-void Time_HandleUserInput(struct Component * component, UserInput input){
-	if(component->Elements[0]->Data > 0 || input.Encoder1 > 0){
-		component->Elements[0]->Data += input.Encoder1;
-		component->Elements[0]->Redraw = 1;
+void Time_HandleUserInput(Component * This, UserInput input){
+	if(This->Elements[0]->Data > 0 || input.Encoder1 > 0){
+		This->Elements[0]->Data += input.Encoder1;
+		This->Elements[0]->Redraw = 1;
 	}
 	if(input.Buttons & OUI_BUT_Settings){
-		component->SelectedElement = (component->SelectedElement + 1)%2;
+		This->SelectedElement = (This->SelectedElement + 1)%2;
 	}
-	if((component->Elements[1]->Data > 0 || input.Encoder1 > 0)&& component->SelectedElement == 0){
-		component->Elements[1]->Data += input.Encoder2;
-		component->Elements[1]->Redraw = 1;
+	if((This->Elements[1]->Data > 0 || input.Encoder1 > 0)&& This->SelectedElement == 0){
+		This->Elements[1]->Data += input.Encoder2;
+		This->Elements[1]->Redraw = 1;
 	}
 }
 

@@ -8,10 +8,13 @@
 #include "markers.h"
 
 Component *OUI_Components[5];
+UI_MemoryDevice OUI_MemoryDeviceGrid = { 0 };
 
 void OUI_Initialize(){
 	GUI_SetBkColor(OUI_GRAPH_BACKGROUND);
 	GUI_Clear();
+	
+	UI_CreateMemoryDevice(&OUI_MemoryDeviceGrid, 40, 15, 270, 180);
 	
 	OUI_Components[0] = GetTime();
 	OUI_Components[1] = GetChannel1();
@@ -26,11 +29,11 @@ void OUI_Initialize(){
 
 void OUI_Draw(){
 	OUI_Components[0]->DrawData(OUI_Components[0]);
-	OUI_DrawGrid();
+	OUI_DrawGraph();
 }
 
-void OUI_DrawLabel(struct Component * component, uint16_t x, uint16_t y){
-	GUI_SetColor(component->PrimaryColor);
+void OUI_DrawLabel(Component * This, uint16_t x, uint16_t y){
+	GUI_SetColor(This->PrimaryColor);
 	GUI_FillCircle(x+15, y+22, 12);
 	GUI_RECT dispRect;
 	dispRect.x0 = x+3;
@@ -38,19 +41,28 @@ void OUI_DrawLabel(struct Component * component, uint16_t x, uint16_t y){
 	dispRect.x1 = x+27;
 	dispRect.y1 = y+34;
 	GUI_SetFont(&GUI_Font20_1);
-	GUI_SetBkColor(component->PrimaryColor);
-	GUI_SetColor(component->TextColor);
-	GUI_DispStringInRect(&component->Identifier, &dispRect, GUI_TA_VCENTER | GUI_TA_HCENTER);
+	GUI_SetBkColor(This->PrimaryColor);
+	GUI_SetColor(This->TextColor);
+	GUI_DispStringInRect(&This->Identifier, &dispRect, GUI_TA_VCENTER | GUI_TA_HCENTER);
 }
 
-void OUI_DrawData(struct Component * component, uint8_t count){
+void OUI_DrawData(Component * This, uint8_t count){
 	for(int i = 0; i < count; i++){
-		component->Elements[i]->DrawData(component->Elements[i], 64*i, 211);
+		This->Elements[i]->DrawData(This->Elements[i], 64*i, 211);
 	}
 }
 
-void OUI_DrawElementData(struct Element * element, uint16_t x, uint16_t y){
-	if(element->Redraw){
+void UI_CreateMemoryDevice(UI_MemoryDevice *Device, uint16_t x,uint16_t y,uint16_t w, uint16_t h)
+{ 
+	Device->X = x;
+	Device->Y = y;
+	Device->Width = w;
+	Device->Height = h;
+	Device->DeviceHandle = GUI_MEMDEV_CreateEx(0, 0, Device->Width, Device->Height,GUI_MEMDEV_NOTRANS);
+}
+
+void OUI_DrawElementData(Element * This, uint16_t x, uint16_t y){
+	if(This->Redraw){
 		GUI_SetColor(OUI_BAR_BACKGROUND);
 		GUI_FillRect(x, y, x+62, y+29);
 		GUI_SetBkColor(OUI_BAR_BACKGROUND);
@@ -61,20 +73,29 @@ void OUI_DrawElementData(struct Element * element, uint16_t x, uint16_t y){
 		dispRect.x1 = x+62;
 		dispRect.y1 = y+28;
 		GUI_SetFont(&GUI_Font8_1);
-		GUI_DispStringInRect(element->Text, &dispRect, GUI_TA_TOP | GUI_TA_HCENTER);
+		GUI_DispStringInRect(This->Text, &dispRect, GUI_TA_TOP | GUI_TA_HCENTER);
 		GUI_SetFont(&GUI_Font16_1);
-		GUI_DispStringInRect(element->Text, &dispRect, GUI_TA_BOTTOM | GUI_TA_HCENTER);
-		element->Redraw = 0;
+		GUI_DispStringInRect(This->Text, &dispRect, GUI_TA_BOTTOM | GUI_TA_HCENTER);
+		This->Redraw = 0;
 	}
 }
 
-void OUI_DrawGrid(){
+void OUI_DrawGraph(){	
+	GUI_MEMDEV_Select(OUI_MemoryDeviceGrid.DeviceHandle);
+	GUI_SetBkColor(OUI_GRAPH_BACKGROUND);
+	GUI_Clear();
+	
 	GUI_SetColor(OUI_GRAPH_LINES);
-	for(int i = 15; i <= 195; i += 20){
-		GUI_DrawLine(40, i, 310, i);
+	for(int i = 0; i <= 180; i += 20){
+		GUI_DrawLine(0, i, 270, i);
 	}
-	for(int i = 40; i <= 310; i += 30){
-		GUI_DrawLine(i, 15, i, 195);
+	for(int i = 0; i <= 270; i += 30){
+		GUI_DrawLine(i, 0, i, 180);
 	}
+	
+	OUI_Components[2]->DrawGraph(OUI_Components[1], 0, 0);
+	OUI_Components[1]->DrawGraph(OUI_Components[1], 0, 0);
+	
+	GUI_MEMDEV_CopyToLCDAt(OUI_MemoryDeviceGrid.DeviceHandle,OUI_MemoryDeviceGrid.X,OUI_MemoryDeviceGrid.Y);
 }
 
