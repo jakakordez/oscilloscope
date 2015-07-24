@@ -48,7 +48,7 @@
           <OutputName>STM32F429I_DISCO_MB1075</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>0</CreateHexFile>
+          <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath></ListingPath>
@@ -174,7 +174,7 @@
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>STLink\ST-LINKIII-KEIL_SWO.dll</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -461,6 +461,11 @@
               <FileName>oscilloscope.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\oscilloscope.c</FilePath>
+            </File>
+            <File>
+              <FileName>input.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\input.c</FilePath>
             </File>
           </Files>
         </Group>

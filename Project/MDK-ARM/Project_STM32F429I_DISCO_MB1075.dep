@@ -40,7 +40,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x55B0FC8E)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x55B0FC8E)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x55B0FC8E)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x55B0FC8E)
-I (..\Inc\oui.h)(0x55B101FF)
+I (..\Inc\oui.h)(0x55B11494)
 I (..\..\Middlewares\ST\STemWin\inc\WM.h)(0x55B0FC95)
 I (..\..\Middlewares\ST\STemWin\inc\GUI_ConfDefaults.h)(0x55B0FC95)
 I (..\Inc\GUIConf.h)(0x55B0FC98)
@@ -50,6 +50,7 @@ I (..\..\Middlewares\ST\STemWin\inc\Global.h)(0x55B0FC95)
 I (..\..\Middlewares\ST\STemWin\inc\WM_GUI.h)(0x55B0FC95)
 I (..\..\Middlewares\ST\STemWin\inc\GUI.h)(0x55B0FC94)
 I (..\..\Middlewares\ST\STemWin\inc\GUI_Version.h)(0x55B0FC95)
+I (..\Inc\input.h)(0x55B114A7)
 F (..\Src\time.c)(0x55B0FE5E)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Inc -I..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I..\..\Drivers\CMSIS\Include -I..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I..\..\Drivers\BSP\STM32F429I-Discovery -I..\..\Middlewares\ST\STemWin\inc --C99-I C:\Users\Jaka\Desktop\oscilloscope\Project\MDK-ARM\RTE-I C:\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-D_RTE_ -DSTM32F429_439xx -DSTM32F429xx -DUSE_STM32F429I_DISCO-o stm32f429i_disco_mb1075\time.o --omf_browse stm32f429i_disco_mb1075\time.crf --depend stm32f429i_disco_mb1075\time.d)
 I (..\Inc\time.h)(0x55B0FC98)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x55B0FC8D)
@@ -90,7 +91,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x55B0FC8E)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x55B0FC8E)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x55B0FC8E)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x55B0FC8E)
-I (..\Inc\oui.h)(0x55B101FF)
+I (..\Inc\oui.h)(0x55B11494)
 I (..\..\Middlewares\ST\STemWin\inc\WM.h)(0x55B0FC95)
 I (..\..\Middlewares\ST\STemWin\inc\GUI_ConfDefaults.h)(0x55B0FC95)
 I (..\Inc\GUIConf.h)(0x55B0FC98)
@@ -100,6 +101,7 @@ I (..\..\Middlewares\ST\STemWin\inc\Global.h)(0x55B0FC95)
 I (..\..\Middlewares\ST\STemWin\inc\WM_GUI.h)(0x55B0FC95)
 I (..\..\Middlewares\ST\STemWin\inc\GUI.h)(0x55B0FC94)
 I (..\..\Middlewares\ST\STemWin\inc\GUI_Version.h)(0x55B0FC95)
+I (..\Inc\input.h)(0x55B114A7)
 F (..\Src\trigger.c)(0x55B0FE71)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Inc -I..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I..\..\Drivers\CMSIS\Include -I..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I..\..\Drivers\BSP\STM32F429I-Discovery -I..\..\Middlewares\ST\STemWin\inc --C99-I C:\Users\Jaka\Desktop\oscilloscope\Project\MDK-ARM\RTE-I C:\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-D_RTE_ -DSTM32F429_439xx -DSTM32F429xx -DUSE_STM32F429I_DISCO-o stm32f429i_disco_mb1075\trigger.o --omf_browse stm32f429i_disco_mb1075\trigger.crf --depend stm32f429i_disco_mb1075\trigger.d)
 I (..\Inc\trigger.h)(0x55B0FC98)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x55B0FC8D)
@@ -140,7 +142,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x55B0FC8E)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x55B0FC8E)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x55B0FC8E)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x55B0FC8E)
-I (..\Inc\oui.h)(0x55B101FF)
+I (..\Inc\oui.h)(0x55B11494)
 I (..\..\Middlewares\ST\STemWin\inc\WM.h)(0x55B0FC95)
 I (..\..\Middlewares\ST\STemWin\inc\GUI_ConfDefaults.h)(0x55B0FC95)
 I (..\Inc\GUIConf.h)(0x55B0FC98)
@@ -150,6 +152,7 @@ I (..\..\Middlewares\ST\STemWin\inc\Global.h)(0x55B0FC95)
 I (..\..\Middlewares\ST\STemWin\inc\WM_GUI.h)(0x55B0FC95)
 I (..\..\Middlewares\ST\STemWin\inc\GUI.h)(0x55B0FC94)
 I (..\..\Middlewares\ST\STemWin\inc\GUI_Version.h)(0x55B0FC95)
+I (..\Inc\input.h)(0x55B114A7)
 F (..\Src\markers.c)(0x55B0FE81)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Inc -I..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I..\..\Drivers\CMSIS\Include -I..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I..\..\Drivers\BSP\STM32F429I-Discovery -I..\..\Middlewares\ST\STemWin\inc --C99-I C:\Users\Jaka\Desktop\oscilloscope\Project\MDK-ARM\RTE-I C:\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-D_RTE_ -DSTM32F429_439xx -DSTM32F429xx -DUSE_STM32F429I_DISCO-o stm32f429i_disco_mb1075\markers.o --omf_browse stm32f429i_disco_mb1075\markers.crf --depend stm32f429i_disco_mb1075\markers.d)
 I (..\Inc\markers.h)(0x55B0FC98)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x55B0FC8D)
@@ -190,7 +193,7 @@ I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x55B0FC8E)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x55B0FC8E)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x55B0FC8E)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x55B0FC8E)
-I (..\Inc\oui.h)(0x55B101FF)
+I (..\Inc\oui.h)(0x55B11494)
 I (..\..\Middlewares\ST\STemWin\inc\WM.h)(0x55B0FC95)
 I (..\..\Middlewares\ST\STemWin\inc\GUI_ConfDefaults.h)(0x55B0FC95)
 I (..\Inc\GUIConf.h)(0x55B0FC98)
@@ -200,6 +203,7 @@ I (..\..\Middlewares\ST\STemWin\inc\Global.h)(0x55B0FC95)
 I (..\..\Middlewares\ST\STemWin\inc\WM_GUI.h)(0x55B0FC95)
 I (..\..\Middlewares\ST\STemWin\inc\GUI.h)(0x55B0FC94)
 I (..\..\Middlewares\ST\STemWin\inc\GUI_Version.h)(0x55B0FC95)
+I (..\Inc\input.h)(0x55B114A7)
 F (..\Src\main.c)(0x55B0FC98)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Inc -I..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I..\..\Drivers\CMSIS\Include -I..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I..\..\Drivers\BSP\STM32F429I-Discovery -I..\..\Middlewares\ST\STemWin\inc --C99-I C:\Users\Jaka\Desktop\oscilloscope\Project\MDK-ARM\RTE-I C:\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-D_RTE_ -DSTM32F429_439xx -DSTM32F429xx -DUSE_STM32F429I_DISCO-o stm32f429i_disco_mb1075\main.o --omf_browse stm32f429i_disco_mb1075\main.crf --depend stm32f429i_disco_mb1075\main.d)
 I (..\Inc\main.h)(0x55B0FC98)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x55B0FC8D)
@@ -257,7 +261,8 @@ I (..\..\Drivers\BSP\STM32F429I-Discovery\..\Components\ili9341\ili9341.h)(0x55B
 I (..\..\Drivers\BSP\STM32F429I-Discovery\..\Components\ili9341\../Common/lcd.h)(0x55B0FC8B)
 I (..\..\Middlewares\ST\STemWin\inc\WM.h)(0x55B0FC95)
 I (..\..\Middlewares\ST\STemWin\inc\WM_GUI.h)(0x55B0FC95)
-I (..\Inc\oui.h)(0x55B101FF)
+I (..\Inc\oui.h)(0x55B11494)
+I (..\Inc\input.h)(0x55B114A7)
 F (..\Src\stm32f4xx_it.c)(0x55B0FC98)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Inc -I..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I..\..\Drivers\CMSIS\Include -I..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I..\..\Drivers\BSP\STM32F429I-Discovery -I..\..\Middlewares\ST\STemWin\inc --C99-I C:\Users\Jaka\Desktop\oscilloscope\Project\MDK-ARM\RTE-I C:\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-D_RTE_ -DSTM32F429_439xx -DSTM32F429xx -DUSE_STM32F429I_DISCO-o stm32f429i_disco_mb1075\stm32f4xx_it.o --omf_browse stm32f429i_disco_mb1075\stm32f4xx_it.crf --depend stm32f429i_disco_mb1075\stm32f4xx_it.d)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x55B0FC8D)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x55B0FC98)
@@ -314,8 +319,8 @@ I (..\..\Drivers\BSP\STM32F429I-Discovery\stm32f429i_discovery_sdram.h)(0x55B0FC
 I (..\..\Drivers\BSP\STM32F429I-Discovery\..\Components\ili9341\ili9341.h)(0x55B0FC8B)
 I (..\..\Drivers\BSP\STM32F429I-Discovery\..\Components\ili9341\../Common/lcd.h)(0x55B0FC8B)
 I (..\Inc\stm32f4xx_it.h)(0x55B0FC98)
-F (..\Src\oui.c)(0x55B1035F)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Inc -I..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I..\..\Drivers\CMSIS\Include -I..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I..\..\Drivers\BSP\STM32F429I-Discovery -I..\..\Middlewares\ST\STemWin\inc --C99-I C:\Users\Jaka\Desktop\oscilloscope\Project\MDK-ARM\RTE-I C:\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-D_RTE_ -DSTM32F429_439xx -DSTM32F429xx -DUSE_STM32F429I_DISCO-o stm32f429i_disco_mb1075\oui.o --omf_browse stm32f429i_disco_mb1075\oui.crf --depend stm32f429i_disco_mb1075\oui.d)
-I (..\Inc\oui.h)(0x55B101FF)
+F (..\Src\oui.c)(0x55B25DEC)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Inc -I..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I..\..\Drivers\CMSIS\Include -I..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I..\..\Drivers\BSP\STM32F429I-Discovery -I..\..\Middlewares\ST\STemWin\inc --C99-I C:\Users\Jaka\Desktop\oscilloscope\Project\MDK-ARM\RTE-I C:\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-D_RTE_ -DSTM32F429_439xx -DSTM32F429xx -DUSE_STM32F429I_DISCO-o stm32f429i_disco_mb1075\oui.o --omf_browse stm32f429i_disco_mb1075\oui.crf --depend stm32f429i_disco_mb1075\oui.d)
+I (..\Inc\oui.h)(0x55B11494)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x55B0FC8D)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x55B0FC98)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x55B0FC8E)
@@ -363,12 +368,53 @@ I (..\..\Middlewares\ST\STemWin\inc\Global.h)(0x55B0FC95)
 I (..\..\Middlewares\ST\STemWin\inc\WM_GUI.h)(0x55B0FC95)
 I (..\..\Middlewares\ST\STemWin\inc\GUI.h)(0x55B0FC94)
 I (..\..\Middlewares\ST\STemWin\inc\GUI_Version.h)(0x55B0FC95)
+I (..\Inc\input.h)(0x55B114A7)
 I (..\Inc\time.h)(0x55B0FC98)
 I (..\Inc\channels.h)(0x55B0FC98)
 I (..\Inc\trigger.h)(0x55B0FC98)
 I (..\Inc\markers.h)(0x55B0FC98)
 F (..\Src\oscilloscope.c)(0x55B0FC98)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Inc -I..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I..\..\Drivers\CMSIS\Include -I..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I..\..\Drivers\BSP\STM32F429I-Discovery -I..\..\Middlewares\ST\STemWin\inc --C99-I C:\Users\Jaka\Desktop\oscilloscope\Project\MDK-ARM\RTE-I C:\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-D_RTE_ -DSTM32F429_439xx -DSTM32F429xx -DUSE_STM32F429I_DISCO-o stm32f429i_disco_mb1075\oscilloscope.o --omf_browse stm32f429i_disco_mb1075\oscilloscope.crf --depend stm32f429i_disco_mb1075\oscilloscope.d)
-I (..\Inc\oscilloscope.h)(0x55B0FC98)
+I (..\Inc\oscilloscope.h)(0x55B1107F)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x55B0FC8D)
+I (..\Inc\stm32f4xx_hal_conf.h)(0x55B0FC98)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x55B0FC8E)
+I (..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x55B0FC8B)
+I (..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h)(0x55B0FC8B)
+I (..\..\Drivers\CMSIS\Include\core_cm4.h)(0x55B0FC8C)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x53468EA4)
+I (..\..\Drivers\CMSIS\Include\core_cmInstr.h)(0x55B0FC8C)
+I (..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x55B0FC8C)
+I (..\..\Drivers\CMSIS\Include\core_cmSimd.h)(0x55B0FC8C)
+I (..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x55B0FC8B)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x55B0FC8D)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x53468EA4)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_crc.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma2d.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_sdram.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_fmc.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c_ex.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2s.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2s_ex.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_ltdc.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x55B0FC8E)
+I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x55B0FC8E)
+F (..\Src\input.c)(0x55B25F50)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Inc -I..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I..\..\Drivers\CMSIS\Include -I..\..\Drivers\STM32F4xx_HAL_Driver\Inc -I..\..\Drivers\BSP\STM32F429I-Discovery -I..\..\Middlewares\ST\STemWin\inc --C99-I C:\Users\Jaka\Desktop\oscilloscope\Project\MDK-ARM\RTE-I C:\Keil\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include-I C:\Keil\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-D_RTE_ -DSTM32F429_439xx -DSTM32F429xx -DUSE_STM32F429I_DISCO-o stm32f429i_disco_mb1075\input.o --omf_browse stm32f429i_disco_mb1075\input.crf --depend stm32f429i_disco_mb1075\input.d)
+I (..\Inc\input.h)(0x55B114A7)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x55B0FC8D)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x55B0FC98)
 I (..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x55B0FC8E)

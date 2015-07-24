@@ -7,18 +7,13 @@
 
 #include "stm32f4xx_hal.h"
 #include "WM.h"
+#include "input.h"
 
 #define OUI_GRAPH_BACKGROUND	0x00994539
 #define OUI_GRAPH_LINES				0x00DEACA5
 #define OUI_BAR_BACKGROUND		0x006C2B40
 
 #define OUI_BUT_Settings			0x0001
-
-typedef struct {
-	uint16_t Buttons;
-	int8_t Encoder1;
-	int8_t Encoder2;
-}UserInput;
 
 typedef struct Element Element;
 struct Element{

@@ -14,8 +14,6 @@
         <TargetCommonOption>
           <Device>STM32F429ZI</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F4xx_DFP.2.5.0</PackID>
-          <PackURL>http://www.keil.com/pack</PackURL>
           <Cpu>IROM(0x08000000,0x200000) IRAM(0x20000000,0x30000) IRAM2(0x10000000,0x10000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -84,8 +82,6 @@
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
-            <nStopA1X>0</nStopA1X>
-            <nStopA2X>0</nStopA2X>
           </AfterMake>
           <SelectedForBatchBuild>0</SelectedForBatchBuild>
           <SVCSIdString></SVCSIdString>
@@ -147,6 +143,7 @@
             <RestoreToolbox>1</RestoreToolbox>
             <RestoreTracepoints>0</RestoreTracepoints>
             <RestoreSysVw>1</RestoreSysVw>
+            <UsePdscDebugDescription>1</UsePdscDebugDescription>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
           <TargetSelection>11</TargetSelection>
@@ -363,8 +360,6 @@
             <uSurpInc>0</uSurpInc>
             <uC99>0</uC99>
             <useXO>0</useXO>
-            <v6Lang>0</v6Lang>
-            <v6LangP>0</v6LangP>
             <VariousControls>
               <MiscControls>--C99</MiscControls>
               <Define>STM32F429xx,USE_STM32F429I_DISCO,</Define>
@@ -466,6 +461,11 @@
               <FileName>oscilloscope.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\oscilloscope.c</FilePath>
+            </File>
+            <File>
+              <FileName>input.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\input.c</FilePath>
             </File>
           </Files>
         </Group>

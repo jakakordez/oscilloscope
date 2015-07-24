@@ -97,5 +97,6 @@ void OUI_DrawGraph(){
 	OUI_Components[1]->DrawGraph(OUI_Components[1], 0, 0);
 	
 	GUI_MEMDEV_CopyToLCDAt(OUI_MemoryDeviceGrid.DeviceHandle,OUI_MemoryDeviceGrid.X,OUI_MemoryDeviceGrid.Y);
+	GUI_MEMDEV_Clear(OUI_MemoryDeviceGrid.DeviceHandle);
 }
 
